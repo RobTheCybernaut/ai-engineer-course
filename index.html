@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Engineer Path for Security People · Free 12-Week Course</title>
+<meta name="description" content="A free, self-paced 12-week course from Python to AI agents and secure AI in production, with a security project every module.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<script>
+  // Apply saved theme before paint to avoid a flash.
+  (function(){try{var s=JSON.parse(localStorage.getItem('aiesec-course-v1')||'{}');var t=s.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+  <a class="brand" href="#/" aria-label="Home"><span class="logo">🛡️</span><span class="brand-text">AI Engineer Path <span class="muted">for Security People</span></span></a>
+  <form class="search" id="searchForm" role="search" onsubmit="return false">
+    <input id="searchInput" type="search" placeholder="Search lessons, repos, quizzes…" aria-label="Search the course" autocomplete="off">
+  </form>
+  <button class="btn btn-primary resume-btn" id="resumeTop" title="Resume where you left off">▶ <span class="label">Resume</span></button>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark/light theme" title="Toggle dark/light theme">🌙</button>
+</header>
+<div class="progress-strip" aria-hidden="true"><div class="progress-fill" id="progressStrip"></div></div>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Course navigation"></nav>
+  <div class="backdrop" id="backdrop" hidden></div>
+  <main id="main" tabindex="-1"></main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
